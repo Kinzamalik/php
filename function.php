@@ -4,6 +4,10 @@ function sayHi($name){
 
 }
 
-sayHi("Kinza")
+sayHi("Kinza");
+sayHi("Tom");
+sayHi("dave");
+sayHi("york");
+
 
 ?>
