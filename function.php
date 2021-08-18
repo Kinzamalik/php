@@ -1,13 +1,11 @@
 <?php
-function sayHi($name){
-    echo "Hello $name";
+function sayHi($name,$age){
+    echo "Hello $name and you are $age";
 
 }
 
-sayHi("Kinza");
-sayHi("Tom");
-sayHi("dave");
-sayHi("york");
+sayHi("Kinza",21);
+
 
 
 ?>
