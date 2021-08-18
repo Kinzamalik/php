@@ -1,8 +1,8 @@
 <?php
 
 $friends = array("talal","ali","rimi","daisu");
-$friends[1] = "unknown";
-echo $friends[2];
+$friends[0] = "unknown";
+echo $friends[0];
 
 
 ?>
