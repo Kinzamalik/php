@@ -9,23 +9,29 @@
 <body>
     
 
-<form action="libs_game.php" method="get">
-   Color: <input type="text" name='color'>
+<form action="libs_game.php" method="post">
+   <!-- Color: <input type="text" name='color'>
    Plural Noun: <input type="text" name='pluralNoun'>
    Celebrity: <input type="text" name='celebrity'>
+   <input type="submit"> -->
+
+   Password: <input type="password" name="password">
    <input type="submit">
+   <br><br>
 </form>
 
 <?php
 
+echo $_POST['password'];
 
-$color = $_GET['color'];
-$pluralNoun = $_GET['pluralNoun'];
-$celebrity = $_GET['celebrity'];
 
-echo "Roses are $color <br>";
-echo "$pluralNoun are blue <br>";
-echo "I Love $celebrity <br>";
+// $color = $_GET['color'];
+// $pluralNoun = $_GET['pluralNoun'];
+// $celebrity = $_GET['celebrity'];
+
+// echo "Roses are $color <br>";
+// echo "$pluralNoun are blue <br>";
+// echo "I Love $celebrity <br>";
 
 
 
