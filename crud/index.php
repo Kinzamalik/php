@@ -12,7 +12,20 @@
     <title>PHP CRUD</title>
   </head>
   <body>
+      
       <?php require_once 'proccess.php';?>
+      <?php  
+            $mysqli = new mysqli('localhost','root','','crud') or die(mysqli_error($mysqli));
+            $result = $mysqli->query("SELECT * FROM data") or die($mysqli->error);
+            pre_r($result -> fetch_assoc());
+            pre_r($result -> fetch_assoc());
+            
+            function pre_r($array){
+                echo '<pre>';
+                print_r($array);
+                echo '<pre>';
+            }
+      ?>
       <div class="row justify-content-center">
             <form action="proccess.php" method="POST">
                 <div class="form-group">
